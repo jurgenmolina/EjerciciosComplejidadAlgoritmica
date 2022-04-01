@@ -15,24 +15,29 @@ public class NumeroTriangular {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Es triangular? = " + numeroTriangular(1));
+        System.out.println("Es triangular? = " + numeroTriangular(10));
     }
 
     public static boolean numeroTriangular(int n) {
 
-        int i = 1; //2 ******* 3 ** 4 ** 5
-        int suma = 0; // 1 *** 3 ** 6 ** 10
+        int i = 1;              //1
+        int suma = 0;           //1
 
-        while (suma < n) {
-            suma = suma + i;
-            i++;
+        while (suma < n) {      //1 //n
+            suma = suma + i;        //2
+            i++;                    //2
         }
 
-        if (suma == n) {
+        if (suma == n) {        //max( 1 + 1)
             return true;
         }
         
-        return false;
+        return false;           // 1
     }
+    
+    // 4 + n(4) + 2
+    // 6 + 6n
+    // 12n
+    // O (n)
 
 }
