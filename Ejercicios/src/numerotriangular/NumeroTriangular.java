@@ -37,7 +37,6 @@ public class NumeroTriangular {
     
     // 4 + n(4) + 2
     // 6 + 6n
-    // 12n
     // O (n)
 
 }
