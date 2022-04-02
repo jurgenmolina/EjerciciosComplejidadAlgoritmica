@@ -12,7 +12,12 @@ package PoliDivisible;
 public class PoliDivisible {
 
     /**
-     * @param args the command line arguments
+     * Se quiere escribir un programa para determinar si un número
+     * es PoliDivisible. Un número es considerado PoliDivisible si:
+        a.Es divisible por su longitud.
+        b.Al quitarle sucesivamente el dígito más a la derecha el número 
+     *    que queda sigue siendo PoliDivisible.
+
      */
     public static void main(String[] args) {
         System.out.println(poliDivisible(381654729));

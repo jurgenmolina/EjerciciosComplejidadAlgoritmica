@@ -12,7 +12,9 @@ package numerotriangular;
 public class NumeroTriangular {
 
     /**
-     * @param args the command line arguments
+     * Se dice que un número n es triangular se
+     * puede expresar como la suma de los j primeros números.
+     * Determinar si un número n es triangular o no.
      */
     public static void main(String[] args) {
         System.out.println("Es triangular? = " + numeroTriangular(10));
