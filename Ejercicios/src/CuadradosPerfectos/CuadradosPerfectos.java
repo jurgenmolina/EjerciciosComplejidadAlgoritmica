@@ -12,36 +12,37 @@ package CuadradosPerfectos;
 public class CuadradosPerfectos {
 
     /**
-     * @param args the command line arguments
+     * Dados dos números a y b donde 1<=a<=b, encuentre el número de cuadrados
+     * perfectos entre a y b (a y b inclusive).
      */
     public static void main(String[] args) {
         System.out.println(cuadradosPerfectos(9, 25));
     }
-    
-    public static String cuadradosPerfectos(int a , int b){
-        
-        if (a>b) 
-            System.out.println("Error, el numero a"         //x
+
+    public static String cuadradosPerfectos(int a, int b) {
+
+        if (a > b) {
+            System.out.println("Error, el numero a" //x
                     + " no puede ser mayor que b \n");
-        
+        }
+
         int i = 1;                                  //1
         int aux = 0;                                //1
         String x = "";                              //1
-        
-            while (i*i <= b) {                      //2 //n { 5 + 2 + 4  + 1 + 2}
-                if (i*i >= a && i*i <= b) {
-                    aux++;
-                    x = x + i*i + " ";
-                }
-                i++;                                    
+
+        while (i * i <= b) {                      //2 //n { 5 + 2 + 4  + 1 + 2}
+            if (i * i >= a && i * i <= b) {
+                aux++;
+                x = x + i * i + " ";
+            }
+            i++;
         }
-        
-        return "Numero a = " + a + ", numero b = " + b              // x
+
+        return "Numero a = " + a + ", numero b = " + b // x
                 + "\n salida = " + aux + ", cuadrados : " + x;
     }
-    
-    
-        // x + 3 + 2 + x + n(14)
-        // x + x + 6 + n(14)
-        // O(n)
+
+    // x + 3 + 2 + x + n(14)
+    // x + x + 6 + n(14)
+    // O(n)
 }
