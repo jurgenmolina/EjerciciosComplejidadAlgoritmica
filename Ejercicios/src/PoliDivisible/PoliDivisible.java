@@ -24,7 +24,7 @@ public class PoliDivisible {
         int i = 1;                  //1
         
         while (aux >= 10) {         //1
-            aux = aux/10;               // n ( 2 + 2 + 1)
+            aux = aux/10;               // k ( 2 + 2 + 1)
             i++;
         }                           
         
@@ -41,8 +41,8 @@ public class PoliDivisible {
         
     }
     
-    // 1 + 1 +1 + n(5) + 1 + n( 7 ) + 1
-    // 7 + 5n + 7n
+    // 1 + 1 +1 + k(5) + 1 + n( 7 ) + 1
+    // 7 + 5log n + 7n
     // O(n)
     
 }
