@@ -20,25 +20,29 @@ public class PoliDivisible {
     
     public static boolean poliDivisible(int numero){
         
-        int aux = numero;
-        int i = 1;
+        int aux = numero;           //1
+        int i = 1;                  //1
         
-        while (aux >= 10) {
-            aux = aux/10;
+        while (aux >= 10) {         //1
+            aux = aux/10;               // n ( 2 + 2 + 1)
             i++;
-        }
+        }                           
         
-        while (i>0) {            
-            if ((numero%i) == 0) {
-                numero = numero/10;
-                i--;
+        while (i>0) {               //1
+            if ((numero%i) == 0) {      //n ( 2 +
+                numero = numero/10;     // 2 +
+                i--;                    // 2 +
             }else{
-                return false;
+                return false;           // minimo
             }
-        }
+        }                               // 1 )
         
-        return true;
+        return true;                //1
         
     }
+    
+    // 1 + 1 +1 + n(5) + 1 + n( 7 ) + 1
+    // 7 + 5n + 7n
+    // O(n)
     
 }
