@@ -15,28 +15,33 @@ public class CuadradosPerfectos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(cuadradosPerfectos(90, 25));
+        System.out.println(cuadradosPerfectos(9, 25));
     }
     
     public static String cuadradosPerfectos(int a , int b){
         
         if (a>b) 
-            System.out.println("Error, el numero a no puede ser mayor que b \n");
+            System.out.println("Error, el numero a"         //x
+                    + " no puede ser mayor que b \n");
         
-        int i = 1;
-        int aux = 0;
-        String x = "";
+        int i = 1;                                  //1
+        int aux = 0;                                //1
+        String x = "";                              //1
         
-            while (i*i <= b) {  
+            while (i*i <= b) {                      //2 //n { 5 + 2 + 4  + 1 + 2}
                 if (i*i >= a && i*i <= b) {
                     aux++;
                     x = x + i*i + " ";
                 }
-                i++;
+                i++;                                    
         }
         
-        return "Numero a = " + a + ", numero b = " + b 
+        return "Numero a = " + a + ", numero b = " + b              // x
                 + "\n salida = " + aux + ", cuadrados : " + x;
     }
     
+    
+        // x + 3 + 2 + x + n(14)
+        // x + x + 6 + n(14)
+        // O(n)
 }
