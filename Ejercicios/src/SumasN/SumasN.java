@@ -19,7 +19,7 @@ public class SumasN {
     static ArrayList<String> sumas = new ArrayList();
 
     public static void main(String[] args) {
-        System.out.println(sumasN(0));
+        System.out.println(sumasN(10));
     }
 
     public static String sumasN(int n) {
