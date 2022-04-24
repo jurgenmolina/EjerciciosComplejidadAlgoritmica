@@ -14,7 +14,7 @@ public class cociente {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int a = 565;
+        int a = 50;
         int b = 5;
         System.out.println("Cociente de "+ a + "/" + b + " = " + cocienteRecursivo(a, b));
     }

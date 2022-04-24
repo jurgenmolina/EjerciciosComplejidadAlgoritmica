@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package CrearL3;
+
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ import java.util.Arrays;
  *
  * @author Jurgenmolina <jurgenmolina29@gmail.com>
  */
-public class l3_a {
+public class crear_Nuevo_Array {
 
     /**
      * @param args the command line arguments

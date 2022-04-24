@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package X_n;
+
 
 /**
  *
  * @author Jurgenmolina <jurgenmolina29@gmail.com>
  */
-public class NewMain {
+public class X_n_potencia {
 
     /**
      * @param args the command line arguments

@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ALU_DIVISION_Resto;
+
 
 /**
  *
  * @author Jurgenmolina <jurgenmolina29@gmail.com>
  */
-public class NewMain {
+public class alu_division_resto {
 
     /**
      * @param args the command line arguments

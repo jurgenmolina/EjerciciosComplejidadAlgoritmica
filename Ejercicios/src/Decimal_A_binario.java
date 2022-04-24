@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package decimal_a_binario;
+
 
 /**
  *
  * @author Jurgenmolina <jurgenmolina29@gmail.com>
  */
 
-public class Main {
+public class Decimal_A_binario {
     public static void main(String[] args) throws Exception {
         System.out.println(numeroBinario(2));
     }
