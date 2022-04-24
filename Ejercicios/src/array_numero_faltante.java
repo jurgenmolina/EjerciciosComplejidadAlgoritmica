@@ -8,7 +8,7 @@
  *
  * @author Jurgenmolina <jurgenmolina29@gmail.com>
  */
-public class array_ascendentemente {
+public class array_numero_faltante {
 
     /**
      * @param args the command line arguments
@@ -22,9 +22,7 @@ public class array_ascendentemente {
     public static int verificarOrden(int array[]){
         
         int n = array.length;
-        System.out.println(n);
         n = (n*(n+1))/2;
-        System.out.println(n);
         
         int i = 0;
         while (i < array.length) {
