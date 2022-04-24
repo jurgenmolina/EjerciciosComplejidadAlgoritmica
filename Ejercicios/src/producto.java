@@ -25,11 +25,10 @@ public class producto {
         while (b>0) {            
             aux += a;
             b--;
-            
         }
         
         return aux;
         
-    }
+    }   // o(N)
     
 }
