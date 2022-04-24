@@ -17,7 +17,7 @@ public class NumeroTriangular {
      * Determinar si un número n es triangular o no.
      */
     public static void main(String[] args) {
-        System.out.println("Es triangular? = " + numeroTriangular(10));
+        System.out.println("Es triangular? = " + numeroTriangular(15));
     }
 
     public static boolean numeroTriangular(int n) {
@@ -26,8 +26,10 @@ public class NumeroTriangular {
         int suma = 0;           //1
 
         while (suma < n) {      //1 //n
+           
             suma = suma + i;        //2
             i++;                    //2
+             System.out.println(suma);
         }
 
         if (suma == n) {        //max( 1 + 1)
