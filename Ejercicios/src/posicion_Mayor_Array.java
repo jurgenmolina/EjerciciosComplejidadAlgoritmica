@@ -31,9 +31,12 @@ public class posicion_Mayor_Array {
         }
         
         return posicionMayor(array, n, i+1, mayor, pm);
-        
-        
-    
     }
+            
+//           | c, n == 0 costante
+//           | 
+//    T(n) = |
+//           | 
+//           | t(n-1) + c , n>0 mientras
     
 }
