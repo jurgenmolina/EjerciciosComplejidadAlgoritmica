@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package javaapplication8;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,7 +29,7 @@ public class NumerosAmigos {
         int m = min, n;
         int i = 0;
 
-        int[][] numerosAmistosos = new int[5][2];
+        int[][] numerosAmistosos = new int[2][2];
         
 
         while (m <= max) {
