@@ -29,7 +29,6 @@ public class NumeroTriangular {
            
             suma = suma + i;        //2
             i++;                    //2
-             System.out.println(suma);
         }
 
         if (suma == n) {        //max( 1 + 1)
