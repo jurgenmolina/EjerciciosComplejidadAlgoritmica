@@ -16,7 +16,7 @@ public class producto {
     public static void main(String[] args) {
         int a = 5;
         int b = 6;
-        System.out.println("Producto de "+ a + "*" + b + " = " + producto(a, b));
+        System.out.println("Producto de "+ a + "*" + b + " = " + productoRecursivo(a, b));
     }
     
     public static int producto(int a, int b){
@@ -30,5 +30,18 @@ public class producto {
         return aux;
         
     }   // o(N)
+    
+    public static int productoRecursivo(int a, int b){
+        
+        if (b == 0) {
+            return 0;
+        }
+        
+        if (b>0) {
+            return a + productoRecursivo(a, b-1);
+        }
+        
+        return 0;
+    }
     
 }

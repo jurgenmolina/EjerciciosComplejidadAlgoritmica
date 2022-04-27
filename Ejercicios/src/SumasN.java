@@ -35,5 +35,9 @@ public class SumasN {
         return "";
         
     }
-
+    
+//    T(n-1) + c            n == 1
+//    T(n - (n - 1)) + c(n-1)
+//    T(nc)
+//    O(n)              n>1
 }

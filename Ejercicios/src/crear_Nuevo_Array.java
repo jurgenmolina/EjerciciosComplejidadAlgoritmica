@@ -5,6 +5,7 @@
  */
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -17,10 +18,16 @@ public class crear_Nuevo_Array {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int array1[] = {1, 3, 5, 7};
-        int array2[] = {2, 4, 6, 8};
+        int array1[] = {25, 14, 78, 56, 17, 33,55,98};
+        int array2[] = {22, 33, 48, 60, 17, 55 , 23, 2};
+        ArrayList<Integer> l = new ArrayList<Integer>();
         
-        System.out.println(Arrays.toString(crearL3(array1, array2)));
+        l = recursiveIntersectionJurgen(array1, array2, 0, 0, l);
+        
+        
+        l.forEach(System.out::println);
+
+            
     }
     
     public static int [] crearL3(int array1[], int array2[]){
@@ -47,4 +54,36 @@ public class crear_Nuevo_Array {
 
     }
     
+    public static ArrayList<Integer> recursiveIntersection(int[] A, int[] B, int lengthA, int lengthB, int i, int j,
+            ArrayList<Integer> l) {
+        if (i < lengthA) {
+            if (j < lengthB) {
+                if (A[i] == B[j]) {
+                    l.add(B[j]);
+                }
+                return recursiveIntersection(A, B, lengthA, lengthB, i, j + 1, l);
+            }
+            j = 0;
+            recursiveIntersection(A, B, lengthA, lengthB, i + 1, j, l);
+        }
+        return l;
+    }
+    
+    public static ArrayList<Integer>  recursiveIntersectionJurgen(int[] A, int[] B, int i, int j
+    ,ArrayList<Integer> l){
+        
+        if (i < A.length) {
+            if (j < B.length) {
+                if (A[i] == B[j]) {
+                    l.add(B[j]);
+                }
+                 return recursiveIntersectionJurgen(A, B, i, j+1, l);}
+            j=0;
+            return recursiveIntersectionJurgen(A, B, i+1, j, l);
+        }
+        return l;
+    }
+    
+    
+    // O ( a * b )
 }
